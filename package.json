@@ -1,5 +1,5 @@
 {
-  "proxy": "https://todo-backend-3fy1.onrender.com",
+  "proxy": "https://todomern-backend-6jd2.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
