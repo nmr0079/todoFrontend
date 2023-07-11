@@ -14,7 +14,7 @@ const TodolistForm = () => {
 
         const todoItem  = {title, description, done}
 
-        const response = await fetch('/api/todolist', {
+        const response = await fetch('https://todomern-backend-6jd2.onrender.com/api/todolist', {
             method: 'POST',
             body : JSON.stringify(todoItem),
             headers: {
