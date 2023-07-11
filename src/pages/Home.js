@@ -12,7 +12,7 @@ const Home = () => {
     //useEffect hook fires a function when the component is rendered, and it should be fired only once
 useEffect(() => {
     const fetchTodoItems = async () => {
-        const response = await fetch('/api/todolist')
+        const response = await fetch('https://todomern-backend-6jd2.onrender.com/api/todolist')
         const json = await response.json() //should have array of objects (todoitems)
 
         if (response.ok) {
