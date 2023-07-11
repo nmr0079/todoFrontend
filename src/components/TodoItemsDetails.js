@@ -133,7 +133,7 @@ const TodoItemsDetails = ({ todoItem }) => {
   const { dispatch } = UseTodoContext();
 
   const handleDeleteClick = async () => {
-    const response = await fetch("/api/todolist/" + todoItem._id, {
+    const response = await fetch("https://todomern-backend-6jd2.onrender.com/api/todolist/" + todoItem._id, {
       method: "DELETE",
     });
 
@@ -149,7 +149,7 @@ const TodoItemsDetails = ({ todoItem }) => {
   };
 
   const handleSaveClick = async () => {
-    const response = await fetch("/api/todolist/" + todoItem._id, {
+    const response = await fetch("https://todomern-backend-6jd2.onrender.com/api/todolist/" + todoItem._id, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -167,7 +167,7 @@ const TodoItemsDetails = ({ todoItem }) => {
 
   const toggleTodo = async () => {
     setDone(!done)
-    const response = await fetch("/api/todolist/" + todoItem._id, {
+    const response = await fetch("https://todomern-backend-6jd2.onrender.com/api/todolist/" + todoItem._id, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
